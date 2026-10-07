@@ -1,0 +1,36 @@
+{
+  "name": "@deepseek-ai/dsh-experimental-speech-to-text-whisper",
+  "description": "Local Whisper (multilingual, Russian-capable) ONNX transcription with a managed sherpa-onnx process; downloads its model on first use",
+  "version": "0.2.0-rc.2",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json",
+    "./worker": {
+      "default": "./lib/worker.js"
+    }
+  },
+  "files": [
+    "lib/index.js",
+    "lib/worker.js",
+    "runtime/assets.json"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "zod": "^4.4.3",
+    "sherpa-onnx-node": "1.13.8",
+    "@deepseek-ai/schemastery": "~3.18.4",
+    "@deepseek-ai/dsh-timeout": "0.2.0-rc.2"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-experimental-speech-to-text": "0.2.0-rc.2",
+    "@deepseek-ai/cordis": "~4.0.4",
+    "@deepseek-ai/dsh-subprocess": "0.2.0-rc.2"
+  }
+}

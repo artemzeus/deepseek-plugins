@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Partial / temporary downloads
+*.part
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

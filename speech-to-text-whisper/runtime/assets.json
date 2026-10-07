@@ -1,0 +1,100 @@
+{
+  "tokens": {
+    "name": "tokens.txt",
+    "bytes": 816730,
+    "sha256": "b34b360dbb493e781e479794586d661700670d65564001f23024971d1f2fa126",
+    "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-small/resolve/main/small-tokens.txt"
+  },
+  "models": {
+    "base": {
+      "int8": {
+        "encoder": {
+          "name": "encoder.int8.onnx",
+          "bytes": 29120534,
+          "sha256": "0b8fb1304b6109976038efff5ace81720e00386f3ff6b54ee8c75291ca0a1e11",
+          "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-base/resolve/main/base-encoder.int8.onnx"
+        },
+        "decoder": {
+          "name": "decoder.int8.onnx",
+          "bytes": 130672026,
+          "sha256": "9759d217388a01b3a4c7c15533201067b48ae819c4daafc8624e64b9409dc02d",
+          "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-base/resolve/main/base-decoder.int8.onnx"
+        }
+      },
+      "fp32": {
+        "encoder": {
+          "name": "encoder.onnx",
+          "bytes": 95087154,
+          "sha256": "5a6b87cb313993f6c9fefec9e7027556f6cb30becddf49655bee36c50ecc12d7",
+          "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-base/resolve/main/base-encoder.onnx"
+        },
+        "decoder": {
+          "name": "decoder.onnx",
+          "bytes": 196548998,
+          "sha256": "8a12c3f6ad65bb5b86d7e6eccc302378f20f9fb2df6cb10747c62895da7ac194",
+          "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-base/resolve/main/base-decoder.onnx"
+        }
+      }
+    },
+    "small": {
+      "int8": {
+        "encoder": {
+          "name": "encoder.int8.onnx",
+          "bytes": 112442483,
+          "sha256": "4cbe7b22fa9026b843b60a68640c747de05bafb1a11b57edc0e66c232d9f33a9",
+          "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-small/resolve/main/small-encoder.int8.onnx"
+        },
+        "decoder": {
+          "name": "decoder.int8.onnx",
+          "bytes": 262226114,
+          "sha256": "acad50b5c782696e91b55914cc5ab4f756f1532f76e22aa6fc615f39fb69a8ee",
+          "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-small/resolve/main/small-decoder.int8.onnx"
+        }
+      },
+      "fp32": {
+        "encoder": {
+          "name": "encoder.onnx",
+          "bytes": 409528992,
+          "sha256": "119bd1e8ba0524baee1687f6b22bf0abd2fe539549cd000734edbca81c66751e",
+          "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-small/resolve/main/small-encoder.onnx"
+        },
+        "decoder": {
+          "name": "decoder.onnx",
+          "bytes": 559127829,
+          "sha256": "a4165cca5c77e381938c0e111032a384901b1e434ae2ad948859035392d21d2c",
+          "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-small/resolve/main/small-decoder.onnx"
+        }
+      }
+    },
+    "medium": {
+      "int8": {
+        "encoder": {
+          "name": "encoder.int8.onnx",
+          "bytes": 374196283,
+          "sha256": "1c54582b4d829de0089f6cb63bbbdb3bf7555398bacaf855fbecf1a84dfd193e",
+          "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-medium/resolve/main/medium-encoder.int8.onnx"
+        },
+        "decoder": {
+          "name": "decoder.int8.onnx",
+          "bytes": 571059257,
+          "sha256": "595d00a338a365a7bfa0ca7f296cabc639583bef770ab6130df90f49a6412747",
+          "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-medium/resolve/main/medium-decoder.int8.onnx"
+        }
+      },
+      "fp32": {
+        "encoder": {
+          "name": "encoder.onnx",
+          "bytes": 1430791931,
+          "sha256": "352c45af645ce03ef83dbb68f63e5cea13baa5537e5feb13bc88a5976df6a4fd",
+          "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-medium/resolve/main/medium-encoder.onnx"
+        },
+        "decoder": {
+          "name": "decoder.onnx",
+          "bytes": 1627278264,
+          "sha256": "c3c7b60335a3564f265162846d2a815b3f020674daeab66107b58618077dd547",
+          "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-medium/resolve/main/medium-decoder.onnx"
+        }
+      }
+    }
+  }
+}
