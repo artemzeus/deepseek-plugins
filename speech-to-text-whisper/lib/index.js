@@ -701,7 +701,7 @@ function apply(ctx, config) {
 	]) if (path !== void 0 && !isAbsolute(path)) throw new Error(`Whisper paths must be absolute: ${path}`);
 	for (const origin of config.modelOrigin === void 0 ? config.modelOrigins : [config.modelOrigin]) new URL(origin);
 	const worker = new WhisperWorker(ctx, config);
-	const lock = JSON.parse(readFileSync(new URL("./runtime/assets.json", import.meta.url), "utf8"));
+	const lock = JSON.parse(readFileSync(new URL("../runtime/assets.json", import.meta.url), "utf8"));
 	const model = lock.models[config.model][config.precision];
 	const estimatedBytes = model.encoder.bytes + model.decoder.bytes + lock.tokens.bytes;
 	ctx.effect(() => {

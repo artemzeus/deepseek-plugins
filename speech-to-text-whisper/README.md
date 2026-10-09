@@ -32,28 +32,33 @@ The SenseVoice provider shipped with DSH only supports `auto / zh / en / yue / j
 
 ## Установка / Installation
 
-1. Скопируйте пакет в `node_modules` профиля DSH (по умолчанию `C:\Users\<user>\.dsh\profiles\desktop\node_modules\@deepseek-ai\dsh-experimental-speech-to-text-whisper`).
-2. Добавьте в `cordis.patch.yml` профиля:
+Рекомендуется ставить бандл — он подтянет провайдер, API и пропатченный UI:
 
-```yaml
-- insert:
-    - id: speech-to-text
-      name: "@deepseek-ai/dsh-experimental-speech-to-text"
-      config:
-        defaultProvider: whisper-local
-    - id: speech-to-text-whisper
-      name: "@deepseek-ai/dsh-experimental-speech-to-text-whisper"
-      config:
-        dataRoot: !!js dshHomePath('speech-to-text', 'whisper')
-    - id: ui-voice-input
-      name: "@deepseek-ai/dsh-experimental-client-ui-voice-input"
+```bash
+dsh plugin --profile <profile> add @artemzeus/dsh-experimental-voice-input-whisper-bundle
 ```
 
-3. Перезапустите DeepSeek Harness.
+Отдельно (только провайдер):
 
-1. Copy the package into the DSH profile's `node_modules` (default `C:\Users\<user>\.dsh\profiles\desktop\node_modules\@deepseek-ai\dsh-experimental-speech-to-text-whisper`).
-2. Add the snippet above to the profile's `cordis.patch.yml`.
-3. Restart DeepSeek Harness.
+```bash
+dsh plugin --profile <profile> add @artemzeus/dsh-experimental-speech-to-text-whisper
+```
+
+Затем полностью перезапустите DeepSeek Harness.
+
+Recommended: install the bundle — it pulls the provider, API and patched UI:
+
+```bash
+dsh plugin --profile <profile> add @artemzeus/dsh-experimental-voice-input-whisper-bundle
+```
+
+Standalone (provider only):
+
+```bash
+dsh plugin --profile <profile> add @artemzeus/dsh-experimental-speech-to-text-whisper
+```
+
+Then fully restart DeepSeek Harness.
 
 ## Настройка / Configuration
 

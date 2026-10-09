@@ -1,0 +1,13 @@
+- insert:
+    - id: speech-to-text
+      name: '@deepseek-ai/dsh-experimental-speech-to-text'
+      config:
+        defaultProvider: whisper-local
+    - id: speech-to-text-whisper
+      name: '@artemzeus/dsh-experimental-speech-to-text-whisper'
+      config:
+        dataRoot: !!js dshHomePath('speech-to-text', 'whisper')
+    - id: api-speech-to-text
+      name: '@deepseek-ai/dsh-experimental-api-speech-to-text'
+    - id: ui-voice-input
+      name: '@artemzeus/dsh-experimental-client-ui-voice-input'

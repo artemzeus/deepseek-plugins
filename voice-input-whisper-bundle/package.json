@@ -1,0 +1,39 @@
+{
+  "name": "@artemzeus/dsh-experimental-voice-input-whisper-bundle",
+  "description": "Experimental voice input with local Whisper (Russian-capable); downloads its runtime on first use",
+  "version": "1.0.2",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@artemzeus/dsh-experimental-speech-to-text-whisper": "1.0.0",
+    "@artemzeus/dsh-experimental-client-ui-voice-input": "1.0.1"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.4"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    }
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
